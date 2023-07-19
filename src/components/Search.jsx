@@ -82,7 +82,7 @@ function Search() {
               </div>
             </div>
           </div>
-          <div className="search-group">
+          <div className="search-group" hidden>
             <label>Estado de la solicitud</label>
             <select
               className="select-estado"

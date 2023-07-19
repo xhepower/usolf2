@@ -14,10 +14,10 @@ console.log(obtenerToken());
 http.defaults.headers.common = { Authorization: `bearer ${obtenerToken()}` };
 class AppService {
   getAll() {
-    return http.get("/pdfs");
+    return http.get("/pdfs", { timeout: 30000 });
   }
   getOne(id) {
-    return http.get(`/users/${id}`);
+    return http.get(`/users/${id}`, { timeout: 30000 });
   }
   save(data) {
     return http.post(`/users`, data);

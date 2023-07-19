@@ -32,28 +32,43 @@ function Item(props) {
       </div>
       <div className="item-datos  item-elemento">
         <p className="datos-linea">
-          <b>Id: </b>
-          {item.id}
+          <b className="datos-etiqueta">Id: </b> <br></br>
+          <b className="datos-valor"> {item.id}</b>
         </p>
         <p className="datos-linea">
-          <b>Nombre: </b> <br />
-          {item.name}
+          <b className="datos-etiqueta">Nombre: </b> <br></br>
+          <b className="datos-valor"> {item.name}</b>
         </p>
         <p className="datos-linea">
-          <b>Ciudad: </b>
-          <br />
-          {item.city}
+          <b className="datos-etiqueta">Identidad: </b> <br></br>
+          <b className="datos-valor"> {item.idNumber}</b>
         </p>
         <p className="datos-linea">
-          <b>Ciudad: </b>
-          <br />
-          {item.city}
+          <b className="datos-etiqueta">Pasaporte: </b> <br></br>
+          <b className="datos-valor"> {item.passport}</b>
         </p>
-        <p className="datos-linea">
-          <b>Direccion: </b>
-          <br />
-          {item.address}
-        </p>
+        <div className="datos-oculto">
+          <p className="datos-linea">
+            <b className="datos-etiqueta">Telefono: </b> <br></br>
+            <b className="datos-valor"> {item.phone}</b>
+          </p>
+          <p className="datos-linea">
+            <b className="datos-etiqueta">Ciudad: </b> <br></br>
+            <b className="datos-valor"> {item.city}</b>
+          </p>
+          <p className="datos-linea">
+            <b className="datos-etiqueta">Direccion: </b> <br></br>
+            <b className="datos-valor"> {item.address}</b>
+          </p>
+          <p className="datos-linea">
+            <b className="datos-etiqueta">Computadora: </b> <br></br>
+            <b className="datos-valor"> {item.computadora}</b>
+          </p>
+          <p className="datos-linea">
+            <b className="datos-etiqueta">Oficina: </b> <br></br>
+            <b className="datos-valor"> {item.oficina}</b>
+          </p>
+        </div>
       </div>
       <div className="item-actions  item-elemento">
         <button className="btnbuscar btnVer" onClick={abrirPDF}>

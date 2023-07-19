@@ -52,3 +52,15 @@
   width: 25px;
   height: 25px;
 }
+.datos.linea {
+  display: block;
+}
+.datos-etiqueta {
+  color: $color4;
+  text-overflow: "";
+}
+.datos-valor {
+  color: $color5;
+  text-overflow: "";
+  font-size: 0.8em;
+}
