@@ -3,7 +3,7 @@ console.log(process.env.REACT_APP_HOST);
 const instance = axios.create({
   baseURL: `http://${process.env.REACT_APP_HOST}:3000/api/v1`,
   // baseURL: "http://192.168.1.6:3000/api/v1",
-  timeout: 5000,
+  timeout: 50000,
   headers: {
     Accept: "application/json",
     "Access-Control-Allow-Origin": "*",
