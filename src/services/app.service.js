@@ -12,7 +12,7 @@ const obtenerToken = () => {
 };
 console.log(obtenerToken());
 http.defaults.headers.common = { Authorization: `bearer ${obtenerToken()}` };
-console.log({ http });
+
 class AppService {
   getAll() {
     return http.get("/pdfs", { timeout: 30000 });
